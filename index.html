@@ -1,0 +1,146 @@
+<!-- Joel Boudreaux -->
+<!-- Email Template project -->
+<!-- For Bay Valley Tech Code Academy 2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "stylesheet.css">
+    <link 
+        rel = "stylesheet" 
+        href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin = "anonymous"
+    >
+    <link 
+        rel = "stylesheet" 
+        href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+        crossorigin = "anonymous">
+</head>
+<body>
+    <div class= "container-fluid">
+        <div class = "row">
+            <!-- Begin sidebar portion -->
+            <div class = "col-2 sidebar">
+                <div class = "row user">
+                    <img src = "blankProfilePicture.png" class = "userProfile">
+                    <p>Welcome, Herkimer!</p>
+                </div>
+                <div class = "row button">
+                    <button>Compose</button>
+                </div>
+                <div class = "row sbItem">
+                    <p><a href = "#">Inbox</a></p>
+                </div>
+                <div class = "row sbItem">
+                    <p><a href = "#">Tagged</a></p>
+                </div>
+                <div class = "row sbItem">
+                    <p><a href = "#">Important</a></p>
+                </div>
+                <div class = "row sbItem">
+                    <p><a href = "#">Sent Mail</a></p>
+                </div>
+                <div class = "row sbItem">
+                    <p><a href = "#">Drafts</a></p>
+                </div>
+                <div class = "row sbItem">
+                    <p><a href = "#">Trash</a></p>
+                </div>
+            </div>
+            <!-- End of sidebar portion -->
+
+            <!-- Begin email portion -->
+            <div class = "col-4 emailSection">
+                <div class = "row searchbar">
+                    <input placeholder = "&#xf002; Search for emails">
+                        <!-- "&#x----;" Enables icon to be used in placeholder text -->
+                        <!-- Accompanied by CSS "font-family: FontAwesome, genericFont;" -->
+                </div>
+                <div class = "row emailList">
+                    <button class = "email">
+                        <div class = "subjectDate">
+                            <h5>Fake Email #1</h5>
+                            <p class = "date">12:34 pm</p>
+                        </div>
+                        <p class = "preview">Lorem ipsum dolor sit amet.</p>
+                    </button>
+                    <button class = "email">
+                        <div class = "subjectDate">
+                            <h5>Fake Email #2</h5>
+                            <p class = "date">August 2, 2020</p>
+                        </div>
+                        <p class = "preview">Lorem ipsum dolor sit amet.</p>
+                    </button>
+                    <button class = "email">
+                        <div class = "subjectDate">
+                            <h5>Fake Email #3</h5>
+                            <p class = "date">July 24, 2020</p>
+                        </div>
+                        <p class = "preview">Lorem ipsum dolor sit amet.</p>
+                    </button>
+                </div>
+            </div>
+            <!-- End of email portion -->
+
+            <!-- Begin email content portion-->
+            <div class = "col-6 emailContent">
+                <div class = "addressBar">
+                    <p>To: fake@email.com</p>
+                    <p>From: bogus@hotmail.com</p>
+                </div>
+                <div class = "subjectLine">
+                    <h3>Subject Line</h3>
+                    <button class = "emailOptions">
+                        <i class = "fa fa-trash"></i>
+                    </button>
+                    <button class = "emailOptions">
+                        <i class = "fa fa-reply"></i>
+                    </button>
+                    <button class = "emailOptions option3">
+                        <i class = "fa fa-ellipsis-h"></i>
+                    </button>
+                </div>
+                <div class = "emailBody">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, sunt.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nam aut sunt nobis qui inventore.</p>
+                </div>
+                <div class = "row replyBox">
+                    <textarea rows = "5"></textarea>
+                    <div class = "replyOptions">
+                        <button id = "attach">
+                            <i class = "fa fa-paperclip"></i>
+                        </button>
+                        <button id = "replyButton">Reply</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End of email content portion -->
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+    <script>
+        // Script to set selected sidebar item
+        var previousItem = $("sbItem").eq(0);
+        $(".sbItem").click(function()
+        {
+            previousItem.removeClass("selectedItem");
+            $(this).addClass("selectedItem");
+            previousItem = $(this);
+        });
+
+        // Script to set selected email
+        var previousEmail = $("email").eq(0);
+        $(".email").click(function()
+        {
+            previousEmail.removeClass("selectedEmail");
+            $(this).addClass("selectedEmail");
+            previousEmail = $(this);
+        });
+    </script>
+</body>
+</html>

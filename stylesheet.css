@@ -1,0 +1,234 @@
+/* Stylesheet for index.html emailTemplate */
+
+html
+{
+    min-width: 650px;
+}
+
+/* Styling for sidebar portion */
+.button
+{
+    justify-content: center;
+    display: flex;
+}
+
+.sidebar
+{
+    background-color: #423E37;
+    color: #FFFFFF;
+    height: 100vh;
+}
+
+.sidebar a
+{
+    color: #FFFFFF;
+    margin: 20px 15px 20px 15px;
+    padding: 0px;
+
+}
+
+.sidebar a:hover
+{
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+.sidebar button
+{
+    background-color: #E4B23C;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    margin: 10px 0px 40px 0px;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 90%;
+}
+
+.sidebar p
+{
+    margin: 15px 5px 5px 5px;
+}
+
+.selectedItem
+{
+    font-weight: bold;
+}
+
+.user
+{
+    display: flex;
+    justify-content: center;
+}
+
+.userProfile
+{
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    height: 30px;
+    margin: 10px 12px 0px 10px;
+    width: 30px;
+}
+/* End of styling for sidebar portion */
+
+/* Styling for email portion */
+.emailList
+{
+    display: flex;
+    justify-content: center;
+}
+
+.emailList button
+{
+    background-color: #F4F3F0;
+    border: none;
+    border-radius: 2px;
+    margin: 5px;
+    width: 90%;
+}
+
+.emailSection
+{
+    background-color: #F4F3F0;
+}
+
+.preview
+{
+    text-align: left;
+}
+
+.searchbar
+{
+    display: flex;
+    justify-content: center;
+}
+
+.searchbar input
+{
+    border: none;
+    border-radius: 2px;
+    font-family: FontAwesome, Arial;
+    margin: 20px;
+    padding: 5px;
+    width: 90%;
+}
+
+.searchbar input::placeholder
+{
+    color: #CCC7C4;
+}
+
+.selectedEmail
+{
+    background-color: #FFFFFF !important;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+.subjectDate
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.subjectDate h5
+{
+    color: #423E37;
+    margin-right: auto;
+}
+
+.date
+{
+    color: #CCC7C4;
+    font-size: 15px;
+}
+/* End of styling for email portion */
+
+/* Styling for email content portion */
+.addressBar
+{
+    color: #8F8983;
+    font-size: 12px;
+    margin: 20px;
+    margin-left: 50px;
+}
+
+.addressBar p
+{
+    margin: 0;
+}
+
+#attach
+{
+    background: none;
+    border: none;
+    bottom: 5px;
+    color: #CCC7C4;
+    font-size: 20px;
+    left: 55px;
+    position: absolute;
+}
+
+.emailBody
+{
+    color: #8F8983;
+    height: 300px;
+    margin-left: 50px;
+    width: 80%;
+}
+
+.emailOptions
+{
+    background: none;
+    border: none;
+    color: #CCC7C4;
+    height: 25px;
+    width: auto;
+}
+
+.replyBox
+{
+    margin-left: 50px;
+    position: relative;
+}
+
+.replyBox textarea
+{
+    height: 175px;
+    margin-left: 50px;
+    resize: none;
+    width: 80%;
+}
+
+#replyButton
+{
+    color: #E4B23C;
+    background: none;
+    border-color: #E4B23C;
+    border-radius: 5px;
+    bottom: 5px;
+    position: absolute;
+    right: 14%;
+    text-transform: uppercase;
+}
+
+/* .replyOptions
+{
+    margin-bottom: 100px;
+    z-index: 21;
+} */
+
+.subjectLine
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    width: 80%;
+}
+
+.subjectLine h3
+{
+    color: #423E37;
+    margin-right: auto;
+}
+/* End of styling for email content portion */
